@@ -1,0 +1,20 @@
+Sample input file for MMPBSA with membrane proteins
+
+&general
+startframe=1, endframe=1000, interval=1, PBRadii=7,temperature=310,
+/
+
+&pb
+memopt=2, emem=7.0, 
+mctrdz=-0.027, mthick=36, poretype=1,
+radiopt=0, indi=4.0, istrng=0.150, fillratio=1.25, inp=1,
+sasopt=0, solvopt=2, ipb=1, bcopt=10, nfocus=1, linit=1000,
+eneopt=2, cutfd=7.0, cutnb=99.0,
+maxarcdot=15000,
+npbverb=1,
+/
+
+&decomp
+idecomp=2, dec_verbose=3,
+print_res="within 4"
+/
